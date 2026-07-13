@@ -15,7 +15,7 @@ export class Auth {
   }
 
   register(registerRequest: any) {
-    return this.http.post(`${this.apiUrl}/register`, registerRequest);
+    return this.http.post(`${this.apiUrl}/register`, registerRequest, { responseType: 'text' });
   }
 
   saveToken(token: string) {

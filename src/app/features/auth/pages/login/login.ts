@@ -18,6 +18,7 @@ export class Login {
   //error message
   isError: boolean = false;
   errorMessage = signal('');
+  showPassword = false;
 
   loginForm = this.fb.group({
     username: ['', Validators.required],
